@@ -184,7 +184,8 @@ circle.r = 10;
 하지만 생성자를 추가한 뒤 클라이언트쪽 코드를 보면 다음과 같다.          
 ```
 Circle circle = new Circle(10); // 인스턴스 생성 시, 인스턴스 필드 값 초기화
-```             
+```
+        
 생성자를 만들기 위해서는 몇 가지 알아두어야 할 사실이 있다.     
 * 생성자 이름은 항상 클래스 이름과 동일해야 한다.          
 * 생성자는 반환 타입이 없다. (void 도 없다.)       
@@ -202,10 +203,70 @@ Circle(int a, String b) {....} // 매개 변수 2개
 Circle(String b, int a) {....} // 매개 변수 2개 (순서가 다른 경우)
 ```
 ---   
-#### <font color='red'>**| this 키워드 이해하기</font>**   
+#### <font color='red'>**| this 키워드 이해하기</font>**            
+(1) this 키워드 정체     
+
+자바에서 제공하는 ```this```는 자기 자신의 인스턴스를 참조하는 키워드이다. 따라서 this 키워드를 통해 클래스의 메서드 및 생성자에서 데이터를 조작할 수 있다.       
+
+하지만 오해하기 쉬운 사실이 하나 있다. 그것은 바로 ```this```는 현재 클래스 기준으로 생성된 인스턴스의 참조값이라는 사실이다. 인스턴스의 참조값과 인스턴스 자체값은 다르다.        
+
+(2) this 사용하기 전에 알아야 될 것들    
+* 암묵적으로 생략이 가능하다.     
+* 자체 필드 혹은 메서드에 접근한다는 사실을 명확하게 하는 용도로 사용할 수 있다.    
+* 꼭 사용해야 하는 경우: 메소드의 파라미터 또는 지역 변수가 동일한 이름을 가진 경우          
+```
+public void setRadius(double r) {
+    this.r = r;  // 파라미터: r 과 지역변수 r 구분
+}
+```
+(3) 인스턴스 참조 값과 인스턴스 자체값이 다른 이유     
+```java
+public class ThisKeyword {
+    private int id;
+    private String name;
+
+    public ThisKeyword(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id) {
+        this.id = id; // 메소드 파라미터와 지역변수 구분
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ThisKeyword returnInstance() {
+        return this;  // 인스턴스 참조 
+    }
+
+    public static void main(String[] args) {
+        ThisKeyword t = new ThisKeyword(5, "Good");
+        System.out.println("t = " + t);
+        System.out.println("this = " + t.returnInstance());
+        t.setId(5);
+        System.out.println("t.getId() = " + t.getId()); // 5
+        t.returnInstance().setId(7);
+        System.out.println("t.returnInstance().getId() = " + t.returnInstance().getId()); // 7
+    }
+}
+```       
+![this-keyword](<img width="400" alt="this-keyword" src="https://user-images.githubusercontent.com/20740884/102097666-8b085780-3e69-11eb-8b84-330dcf871c8e.png">
+)
 
 ---   
 
 #### Reference
 * Java in a nutshell, 7th Edition   
-* https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2   
+* https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2       
+* https://engkimbs.tistory.com/873
