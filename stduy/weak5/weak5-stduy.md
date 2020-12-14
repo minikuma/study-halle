@@ -5,12 +5,74 @@
 * 생성자를 정의하는 방법
 * this 키워드 이해하기.
 ---   
-#### **| 클래스란 무엇인가?**
+#### <font color='red'>**| 클래스란 무엇인가?</font>**
 > 자바에서 클래스는 모든 자바 프로그램의 기본적인 구조이다. 클래스를 정의하지 않고는 자바 코드를 작성할 수 없다. 모든 자바의 **서술(기술)** 은 클래스를 통해서 가능하며 모든 메소드는 클래스 안에서 구현된다.   
-> (참고) **서술(Statement)란?** 프로그래밍에서 실행 가능한 최소의 독립적인 코드 조작을 말한다. 컴파일러가 이해하고 실행할 수 있는 모든 구문이 Statement 이다.
----
-이
-#### **| 클래스를 정의하는 방법**
+> 
+> (참고) **서술(Statement)이란?** 프로그래밍에서 실행 가능한 최소의 독립적인 코드 조작을 말한다. 컴파일러가 이해하고 실행할 수 있는 모든 구문이 Statement 이다.   
+
+---   
+#### <font color='red'>**| 클래스 정의</font>**   
+* 데이터 필드 + 메서드로 구성   
+* (1) 시그니쳐 (클래스의 이름) + 본문 (중괄호로 묶인 (2) 멤버들: 필드와 메서드 등)    
+
+
+#### (1) 시그니쳐 특징
+* 다른 클래스로 확장(Extends) 선언 가능 (슈퍼 클래스, 서브 클래스 관계 설정)
+* 확장(Extends) 시, 클래스의 멤버들 접근을 제어할 수 있음 (public, protected, private 등)
+* 다른 클래스를 인터페이스(Interface)로 선언 가능
+
+#### (2) 멤버들(필드 + 메서드) 특징     
+* static or non-static 가능   
+* static 멤버는 클래스 내부에 속함   
+* non-static 멤버는 클래스의 인스턴스와 연결   
+* 멤버 종류   
+  * 클래스 필드   
+  * 클래스 메서드   
+  * 인스턴스 필드   
+  * 인스턴스 메서드   
+
+```java
+public class Signature {
+    static class Circle {
+        // 클래스 필드
+        public static final double PI = 3.14159;
+
+        // 클래스 메서드
+        public static double radiusToDegrees(double radians) {
+            return 180 * radians / PI;
+        }
+
+        // 인스턴스 필드
+        public double r;
+
+        // 인스턴스 메서드 (1)
+        public double area() {
+            return PI * r * r;
+        }
+        // 인스턴스 메서드 (2)
+        public double circumference() {
+            return 2 * PI * r;
+        }
+    }
+
+    public static void main(String[] args) {
+        // 클래스 필드 or 메서드는 인스턴스 생성 없이 사용 가능
+        double pi = Circle.PI;
+        double radiusToDegrees = Circle.radiusToDegrees(5.00);
+        System.out.println("pi = " + pi);
+        System.out.println("radiusToDegrees = " + radiusToDegrees);
+        // 인스턴스 필드 or 메서드는 인스턴스 생성이 필요
+        Circle circle = new Circle();
+        circle.r = 10;
+        double area = circle.area();
+        System.out.println("area = " + area);
+        double circumference = circle.circumference();
+        System.out.println("circumference = " + circumference);
+    }
+}
+```    
+
+#### <font color='red'>**| 클래스를 정의하는 방법</font>**
 > 클래스 정의는 class 키워드 다음에 클래스 이름과 중괄호 안의 클래스의 멤버 집합으로 구성된다. 클래스가 다른 클래스로 확장하는 경우 extends 키워드와 그 뒤에 클래스 이름을 붙인다. 클래스가 하나 이상의 인터페이스를 구현하는 경우 implements 키워드와 여러 개의 인터페이스 목록이 올 수 있다.
 
 ```java
@@ -19,7 +81,7 @@ public class Integer extends Number implements Serializable, Comparable {
 }
 ```      
 
-**‍접근 제한자를 통한 클래스 선언**
+**제어자(Modifier)를 통한 클래스 선언**
 
 * abstract
   - 인스턴스화를 할 수없는 불완전한 클래스를 만든다. 
@@ -87,16 +149,16 @@ public class ModifyClass {
 ```
 ---   
 
-#### **| 객체를 만드는 방법 (new 연산자)**    
+#### **<font color='red'>| 객체를 만드는 방법 (new 연산자)</font>**    
 
 ---
-#### **| 메소드를 정의하는 방법**   
+#### <font color='red'>**| 메소드를 정의하는 방법</font>**   
 
 ---
-#### **| 생성자를 정의하는 방법**   
+#### <font color='red'>**| 생성자를 정의하는 방법</font>**   
 
 ---   
-#### **| this 키워드 이해하기**   
+#### <font color='red'>**| this 키워드 이해하기</font>**   
 
 ---   
 
