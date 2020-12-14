@@ -1,5 +1,10 @@
-#### Week 1
-#### Week 2
-#### Week 3
-#### Week 4
-#### Week 5
+### Introduce   
+> 백기선님이 유튜브를 통해 진행하는 온라인 스터디인 "스터디 할래"에 참여하면서 정리 했던 내용들을 모아 놓은 저장소입니다. 총 18주간 진행되며, 자바에 대한 기본적이지만 중요한 내용들을 학습하는 스터디입니다.
+
+### Study Contents
+#### WEEK 1
+#### WEEK 2
+#### WEEK 3
+#### WEEK 4
+#### WEEK 5: https://github.com/minikuma/study-halle/blob/master/stduy/weak5/weak5-stduy.md
+
