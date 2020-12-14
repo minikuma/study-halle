@@ -18,6 +18,11 @@ public class Signature {
         // 인스턴스 필드
         public double r;
 
+        // 생성자 추가
+        public Circle(double r) {
+            this.r= r;
+        }
+
         // 인스턴스 메서드 (1)
         public double area() {
             return PI * r * r;
@@ -35,8 +40,8 @@ public class Signature {
         System.out.println("pi = " + pi);
         System.out.println("radiusToDegrees = " + radiusToDegrees);
         // 인스턴스 필드 or 메서드는 인스턴스 생성이 필요
-        Circle circle = new Circle();
-        circle.r = 10;
+        Circle circle = new Circle(10);
+        //circle.r = 10;
         double area = circle.area();
         System.out.println("area = " + area);
         double circumference = circle.circumference();
