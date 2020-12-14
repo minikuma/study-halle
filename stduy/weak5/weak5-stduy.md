@@ -262,7 +262,15 @@ public class ThisKeyword {
 }
 ```       
 
-<p align="center"><img width="550" alt="this-keyword" src="https://user-images.githubusercontent.com/20740884/102098051-0bc75380-3e6a-11eb-82d7-a3848be006fd.png"></p>
+<p align="center"><img width="600" alt="this-keyword" src="https://user-images.githubusercontent.com/20740884/102098051-0bc75380-3e6a-11eb-82d7-a3848be006fd.png"></p>              
+
+위의 그림은 예제 코드를 JVM 메모리 모델로 간략하게 표시한 그림이다. ````ThisKeyword t = new ThisKeyword(5, "Good");````, ```t.returnInstance();``` 2가지 코드에 주목해 보자.       
+
+첫 번째는 ```new```키워드를 통해 생성자를 인스턴스로 생성하였다. stack 영역에는 ```t```라는 변수가 만들어지고, ```t```는 실제 클래스의 인스턴스의 참조값을 갖게 된다.      
+
+두 번째 ```this```는 클래스의 ```returnInstance()```메서드를 통해 만들어서 ```this```를 반환하였다. 여기서 ```this```는 현재 자신의 인스턴스 참조값을 갖는다.        
+
+위에 그림을 다시 보면 실제 인스턴스를 참조하는 stack 영역의 변수가 2개, 실제 인스턴스는 1개이다. Stack 영역의 별도 공간에 변수가 할당되어 있지만 결국 같은 인스턴스 참조값을 갖게 된다.       
 
 ---   
 
