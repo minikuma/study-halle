@@ -261,7 +261,7 @@ public class ThisKeyword {
     }
 }
 ```       
-![this-keyword](<img width="400" alt="this-keyword" src="https://user-images.githubusercontent.com/20740884/102097666-8b085780-3e69-11eb-8b84-330dcf871c8e.png">
+![this-keyword](<img width="400" alt="this-keyword" src="https://github.com/minikuma/study-halle/blob/master/stduy/images/this-keyword.png">
 )
 
 ---   
