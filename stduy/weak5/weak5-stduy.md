@@ -3,7 +3,7 @@
 * 객체 만드는 방법 (new 연산자)
 * 메소드를 정의하는 방법
 * 생성자를 정의하는 방법
-* this 키워드 이해하기.
+* this 키워드 이해하기
 ---   
 #### <font color='red'>**| 클래스란 무엇인가?</font>**
 > 자바에서 클래스는 모든 자바 프로그램의 기본적인 구조이다. 클래스를 정의하지 않고는 자바 코드를 작성할 수 없다. 모든 자바의 **서술(기술)** 은 클래스를 통해서 가능하며 모든 메소드는 클래스 안에서 구현된다.   
@@ -158,7 +158,7 @@ public class ModifyClass {
 
 #### <font color='red'>**| 메소드를 정의하는 방법</font>**         
 (1) 메소드 정의     
-자바 클래스 내부에 존재하며, 어떤 특정 작업을 처리하기 위한 명령문의 집합이다.       
+* 자바 클래스 내부에 존재하며, 어떤 특정 작업을 처리하기 위한 명령문의 집합      
 
 (2) 정의 방법      
 ```
@@ -207,7 +207,8 @@ public int sum(int a, int b) {
 }   
 ```      
 
-(4) 메서드 시그니쳐     
+(4) 메서드 시그니쳐      
+
 메서드 명과 매개변수의 개수와 타입, 그 순서를 의미 한다. 단 반환 타입은 포함되지 않는다. 이러한 자바의 메서드 시그니쳐 특징으로 인해 메서드 오버로딩이 발생하는 데 아래 예제를 한번 보자.      
 
 ```
@@ -244,7 +245,8 @@ public String add (String a, String b) {
 ---     
 
 #### <font color='red'>**| 생성자를 정의하는 방법</font>**        
-(1) 생성자 규칙     
+(1) 생성자 규칙      
+
 ```생성자 = 초기화```라는 개념을 가지고 여러 가지 생성자를 정의하는 방법을 알아보자. 생성자를 이용하여 기존 ```Circle```클래스를 수정해 보자.         
 ```java
 public class Signature {
@@ -360,4 +362,5 @@ public class ThisKeyword {
 #### Reference
 * Java in a nutshell, 7th Edition   
 * https://blog.lulab.net/programming-java/java-final-when-should-i-use-it/#fn:2       
-* https://engkimbs.tistory.com/873
+* https://engkimbs.tistory.com/873      
+* http://www.tcpschool.com/java/java_usingMethod_overloading
