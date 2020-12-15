@@ -181,7 +181,7 @@ public class ModifyClass {
 * 매개변수 목록(Parameter): 메서드 호출 시 전달되는 인수의 값을 저장할 변수      
 
 (3) 메서드 호출 방법      
-```
+```java
 Test test = new Test(); // 인스턴스 생성
 String a = test.say();  // Test 클래스에 선언된 say() 메서드를 호출    
 System.out.println(a);  // HI 출력
