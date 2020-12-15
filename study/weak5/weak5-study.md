@@ -194,7 +194,7 @@ System.out.println(a);  // HI 출력
 * 입력 값 없고 반환 값 있음         
 * 입력 값 있고 반환 값 있음   
 
-```
+```java
 // 입력 값 없고 반환 값 없음
 public void say() {
     System.out.println("say hello");
@@ -220,7 +220,7 @@ public int sum(int a, int b) {
 
 메서드 명과 매개변수의 개수와 타입, 그 순서를 의미 한다. 단 반환 타입은 포함되지 않는다. 이러한 자바의 메서드 시그니쳐 특징으로 인해 메서드 오버로딩이 발생하는 데 아래 예제를 한번 보자.      
 
-```
+```java
 public int add (int a, int b) {
     return a + b;
 }
@@ -237,7 +237,7 @@ public String add (String a, String b) {
 * 자바의 다형성 (Polymorphism)을 구현하는 방법 중 하나이다.  
 * 대표적으로 ``println()`` 메서드가 있다.
 
-```
+```java
 1. println()
 2. println(boolean x)
 3. println(char x)
@@ -271,12 +271,12 @@ public class Signature {
 }
 ```             
 생성자가 없던 코드에는 인스턴스 필드를 초기화 하기 위해서는 클라이언트쪽 코드에 다음과 같은 코드를 작성해야 했다.          
-```
+```java
 Circle circle = new Circle();
 circle.r = 10;
 ```          
 하지만 생성자를 추가한 뒤 클라이언트쪽 코드를 보면 다음과 같다.          
-```
+```java
 Circle circle = new Circle(10); // 인스턴스 생성 시, 인스턴스 필드 값 초기화
 ```
         
@@ -290,7 +290,7 @@ Circle circle = new Circle(10); // 인스턴스 생성 시, 인스턴스 필드 
 
 (2) 다양한 정의 방법        
 * 여러 생성자 정의 가능 (오버로딩)     
-```
+```java
 Circle() {....} // 매개 변수 없음
 Circle(int a) {....} // 매개 변수 1개 
 Circle(int a, String b) {....} // 매개 변수 2개
@@ -308,7 +308,7 @@ Circle(String b, int a) {....} // 매개 변수 2개 (순서가 다른 경우)
 * 암묵적으로 생략이 가능하다.     
 * 자체 필드 혹은 메서드에 접근한다는 사실을 명확하게 하는 용도로 사용할 수 있다.    
 * 꼭 사용해야 하는 경우: 메소드의 파라미터 또는 지역 변수가 동일한 이름을 가진 경우          
-```
+```java
 public void setRadius(double r) {
     this.r = r;  // 파라미터: r 과 지역변수 r 구분
 }
