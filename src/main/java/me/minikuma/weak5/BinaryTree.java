@@ -6,4 +6,9 @@ package me.minikuma.weak5;
  * Github : http://github.com/minikuma
  */
 public class BinaryTree {
+    static class Node {
+        int data;
+        Node left;
+        Node right;
+    }
 }
