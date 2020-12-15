@@ -6,5 +6,5 @@
 #### WEEK 2
 #### WEEK 3
 #### WEEK 4
-#### WEEK 5: https://github.com/minikuma/study-halle/blob/master/stduy/weak5/weak5-stduy.md
+#### WEEK 5: https://github.com/minikuma/study-halle/blob/master/study/weak5/weak5-study.md
 
