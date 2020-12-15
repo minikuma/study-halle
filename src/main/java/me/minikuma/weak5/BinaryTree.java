@@ -1,5 +1,10 @@
 package me.minikuma.weak5;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * Created by wminikuma@gmail.com on 2020/12/14
  * Blog : https://minikuma-laboratory.tistory.com/
@@ -23,6 +28,10 @@ public class BinaryTree {
         public void setRight(Node right) {
             this.right = right;
         }
+
+        public int getValue() {
+            return value;
+        }
     }
 
     private Node root;
@@ -43,28 +52,40 @@ public class BinaryTree {
         return node;
     }
 
+    ArrayList<Integer> values = new ArrayList<>();
+
     // in-order: left -> root -> right) -> stack / 재귀 가능
     public void dfs(Node node) {
         if (node != null) {
             dfs(node.left);
-            System.out.print(node.value);
+            values.add(node.value);
             dfs(node.right);
         }
     }
 
-    // level-order -> QUEUE 방식 (방문한 노드 체크 필수)
-    public void bfs(Node node) {
-
+    public List<Integer> getDfsValues() {
+        return values;
     }
 
-    public static void main(String[] args) {
-        BinaryTree bt = new BinaryTree();
-        Node n4 = bt.makeNode(null, 4, null);
-        Node n5 = bt.makeNode(null, 5, null);
-        Node n2 = bt.makeNode(n4, 2, n5);
-        Node n3 = bt.makeNode(null, 3, null);
-        Node n1 = bt.makeNode(n2, 1, n3);
-        bt.setRoot(n1);
-        bt.dfs(bt.getRoot());
+    // level-order -> QUEUE 방식
+    public List<Integer> bfs(Node node) {
+        Queue<Node> stack = new LinkedList<>();
+        List<Integer> result = new ArrayList<>(); // 최종 결과
+
+        Node findNode = node;
+        stack.add(findNode);
+
+        while (!stack.isEmpty()) {
+            Node n = stack.poll();
+            result.add(n.value);
+
+            if (n.left != null) {
+                stack.add(n.left);
+            }
+            if (n.right != null) {
+                stack.add(n.right);
+            }
+        }
+        return result;
     }
 }

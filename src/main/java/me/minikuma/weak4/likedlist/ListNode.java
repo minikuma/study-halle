@@ -50,8 +50,6 @@ public class ListNode {
     }
 
     public Node remove(Node head, int positionToRemove) throws Exception {
-        // 입력된 위치에 존재하는 노드 객체를 null 처리
-        // 제거 전제 존재하는 지 확인 필요?
         if (positionToRemove == 0 || curr == 0) {
             throw new AccessException("Head 로 지정된 값은 변경할 수 없습니다.");
         } else {
