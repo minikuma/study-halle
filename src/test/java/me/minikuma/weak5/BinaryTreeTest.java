@@ -1,9 +1,6 @@
 package me.minikuma.weak5;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,17 +15,17 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class BinaryTreeTest {
 
-    static BinaryTree bt;
-    static Node n1;
-    static Node n2;
-    static Node n3;
-    static Node n4;
-    static Node n5;
-    List<Integer> expectedDfsValues = Arrays.asList(4, 2, 5, 1, 3);
-    List<Integer> expectedBfsValues = Arrays.asList(1, 2, 3, 4, 5);
+    private static BinaryTree bt;
+    private static Node n1;
+    private static Node n2;
+    private static Node n3;
+    private static Node n4;
+    private static Node n5;
+    private static List<Integer> expectedDfsValues = Arrays.asList(4, 2, 5, 1, 3);
+    private static List<Integer> expectedBfsValues = Arrays.asList(1, 2, 3, 4, 5);
 
-    @BeforeEach
-    void init() {
+    @BeforeAll
+    static void init() {
         bt = new BinaryTree();
         n4 = bt.makeNode(null, 4, null);
         n5 = bt.makeNode(null, 5, null);

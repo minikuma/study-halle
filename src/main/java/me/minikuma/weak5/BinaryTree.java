@@ -72,18 +72,18 @@ public class BinaryTree {
         Queue<Node> stack = new LinkedList<>();
         List<Integer> result = new ArrayList<>(); // 최종 결과
 
-        Node findNode = node;
-        stack.add(findNode);
+        Node startNode = node;
+        stack.add(startNode);
 
         while (!stack.isEmpty()) {
-            Node n = stack.poll();
-            result.add(n.value);
+            Node currentNode = stack.poll();
+            result.add(currentNode.value);
 
-            if (n.left != null) {
-                stack.add(n.left);
+            if (currentNode.left != null) {
+                stack.add(currentNode.left);
             }
-            if (n.right != null) {
-                stack.add(n.right);
+            if (currentNode.right != null) {
+                stack.add(currentNode.right);
             }
         }
         return result;
