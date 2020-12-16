@@ -76,4 +76,12 @@ class BinaryTreeTest {
             assertEquals(values.get(i), expectedBfsValues.get(i));
         }
     }
+
+    @Test
+    @DisplayName("탐색 시작 값이 null 인 경우")
+    void null_node_check() {
+        assertNotNull(bt.bfs(null));
+        bt.dfs(null);
+        assertNotNull(bt.getDfsValues());
+    }
 }

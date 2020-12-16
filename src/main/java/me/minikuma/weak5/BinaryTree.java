@@ -69,6 +69,9 @@ public class BinaryTree {
 
     // level-order -> QUEUE 방식
     public List<Integer> bfs(Node node) {
+
+        if (node == null) return new ArrayList<>();
+
         Queue<Node> stack = new LinkedList<>();
         List<Integer> result = new ArrayList<>(); // 최종 결과
 
