@@ -6,5 +6,7 @@
 #### WEEK 2
 #### WEEK 3
 #### WEEK 4
-#### WEEK 5: https://github.com/minikuma/study-halle/blob/master/study/weak5/weak5-study.md
+#### WEEK 5: https://github.com/minikuma/study-halle/blob/master/study/weak5/weak5-study.md        
+#### WEEK 6: https://www.notion.so/6-7c2a8b58db1b43c79a4562a6983d146e    
+
 

@@ -1,4 +1,4 @@
-package me.minikuma.weak4.stack;
+package me.minikuma.week4.stack;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

@@ -1,4 +1,4 @@
-package me.minikuma.weak6;
+package me.minikuma.week6;
 
 /**
  * Created by wminikuma@gmail.com on 2020/12/22
@@ -8,15 +8,8 @@ package me.minikuma.weak6;
 public class Main {
     public static void main(String[] args) {
         System.out.println("=======================");
-        Parent p = new Parent();
-        p.printName();
-        System.out.println("=======================");
-        Child c = new Child();
-        c.printName();
-        System.out.println("=======================");
-        // 다운 캐스팅
-        Parent p1 = new Child();
-        p1.printName();
+        ChildOverriding co = new ChildOverriding();
+        co.printName();
         System.out.println("=======================");
     }
 }

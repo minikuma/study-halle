@@ -1,4 +1,4 @@
-package me.minikuma.weak5;
+package me.minikuma.week5;
 
 /**
  * 클래스 접근 제한자 예제

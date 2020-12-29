@@ -1,4 +1,4 @@
-package me.minikuma.weak4.likedlist;
+package me.minikuma.week4.likedlist;
 
 import java.rmi.AccessException;
 import java.util.ArrayList;

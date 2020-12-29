@@ -1,8 +1,8 @@
-package me.minikuma.weak4.likedlist;
+package me.minikuma.week4.likedlist;
 
 import org.junit.jupiter.api.*;
 
-import static me.minikuma.weak4.likedlist.ListNode.*;
+import static me.minikuma.week4.likedlist.ListNode.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

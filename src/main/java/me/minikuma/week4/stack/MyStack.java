@@ -1,4 +1,4 @@
-package me.minikuma.weak4.stack;
+package me.minikuma.week4.stack;
 
 import java.util.NoSuchElementException;
 

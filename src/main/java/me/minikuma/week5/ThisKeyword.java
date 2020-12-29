@@ -1,4 +1,4 @@
-package me.minikuma.weak5;
+package me.minikuma.week5;
 
 /**
  * Created by wminikuma@gmail.com on 2020/12/14

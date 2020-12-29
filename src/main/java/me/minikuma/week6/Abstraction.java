@@ -1,4 +1,7 @@
-package me.minikuma.week5;
+package me.minikuma.week6;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by wminikuma@gmail.com on 2020/12/24
@@ -7,7 +10,8 @@ package me.minikuma.week5;
  */
 public class Abstraction {
     public static void main(String[] args) {
-        String hello = "Hello";
-        System.out.println("hello: " + hello);
+        final List<String> list = new ArrayList<>();
+        list.add("final");
+        list.add("계속 추가됨");
     }
 }

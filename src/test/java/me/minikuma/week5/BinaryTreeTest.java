@@ -1,11 +1,11 @@
-package me.minikuma.weak5;
+package me.minikuma.week5;
 
 import org.junit.jupiter.api.*;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static me.minikuma.weak5.BinaryTree.*;
+import static me.minikuma.week5.BinaryTree.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
