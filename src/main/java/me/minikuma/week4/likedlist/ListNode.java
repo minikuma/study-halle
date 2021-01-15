@@ -19,7 +19,6 @@ public class ListNode {
             this.next = null;
         }
     }
-
     private Node h;
     private int curr = -1;
 
