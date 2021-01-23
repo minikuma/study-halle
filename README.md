@@ -10,7 +10,9 @@
 #### WEEK 6: https://www.notion.so/6-7c2a8b58db1b43c79a4562a6983d146e       
 #### WEEK 7: https://www.notion.so/7-ce179a0bb1d24622adbaa9e70eb97a18       
 #### WEEK 8: https://www.notion.so/8-c057a46e1970469b8e7ecf228cd40831    
-#### WEEK 9: https://www.notion.so/9-17a778bba6ed4436ac3d7b9415b6babb   
+#### WEEK 9: https://www.notion.so/9-17a778bba6ed4436ac3d7b9415b6babb    
+#### WEEK 10: https://www.notion.so/10-a2dea1979bb845e8b94320fb4dfe51a9    
+
 
 
 
