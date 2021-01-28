@@ -3,7 +3,7 @@
 
 ### Study Contents
 #### WEEK 1: https://www.notion.so/1-JVM-058a0d8601584186a63b17f75602dae3     
-#### WEEK 2
+#### WEEK 2: https://www.notion.so/2-17b501d945cc4303b9f579fa006d212a     
 #### WEEK 3
 #### WEEK 4
 #### WEEK 5: https://github.com/minikuma/study-halle/blob/master/study/weak5/weak5-study.md        
@@ -11,7 +11,9 @@
 #### WEEK 7: https://www.notion.so/7-ce179a0bb1d24622adbaa9e70eb97a18       
 #### WEEK 8: https://www.notion.so/8-c057a46e1970469b8e7ecf228cd40831    
 #### WEEK 9: https://www.notion.so/9-17a778bba6ed4436ac3d7b9415b6babb    
-#### WEEK 10: https://www.notion.so/10-a2dea1979bb845e8b94320fb4dfe51a9    
+#### WEEK 10: https://www.notion.so/10-a2dea1979bb845e8b94320fb4dfe51a9     
+#### WEEK 11: https://www.notion.so/11-Enum-ccbba2bf2b7746ed8a12d2dee09aa833    
+
 
 
 

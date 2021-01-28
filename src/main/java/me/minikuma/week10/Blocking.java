@@ -11,7 +11,8 @@ public class Blocking {
     public static void main(String[] args) {
         BlockingThread bt = new BlockingThread();
         bt.start();
-
+        String s = "sss";
+        System.out.println(s);
         String input = JOptionPane.showInputDialog("아무 값이나 입력하세요.");
         System.out.println("입력 하신 값은 " + input + " 입니다.");
     }
