@@ -13,6 +13,8 @@
 #### WEEK 9: https://www.notion.so/9-17a778bba6ed4436ac3d7b9415b6babb    
 #### WEEK 10: https://www.notion.so/10-a2dea1979bb845e8b94320fb4dfe51a9     
 #### WEEK 11: https://www.notion.so/11-Enum-ccbba2bf2b7746ed8a12d2dee09aa833    
+#### WEEK 12: https://www.notion.so/12-a4b39805e8c045729e2167e88088a7f9    
+
 
 
 
