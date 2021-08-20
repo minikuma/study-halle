@@ -1,15 +1,9 @@
 package me.minikuma.week1;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Created by wminikuma@gmail.com on 2020/12/29
- * Blog : https://minikuma-laboratory.tistory.com/
- * Github : http://github.com/minikuma
- */
 class UserServiceTest {
 
     @Test
