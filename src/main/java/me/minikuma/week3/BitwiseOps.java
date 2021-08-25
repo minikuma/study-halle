@@ -11,11 +11,8 @@ public class BitwiseOps {
         int result = value1 & value2;
         System.out.println("result = " + result);
         // ~ 연산
-        int i = 1;  // int 는 8바이트 = 32 bit (1의 보수) 0001 -> 1110 (1의 보수) + 1 = 1111
-        int j = ~1; // -2
-        int a = 1;  // 8 bit (1의 보수)
-        byte b = ~1; // -2
+        int j = ~1; // int 는 8 바이트 = 32 bit => 0001 -> 1110
+        byte b = ~1; // byte 는 8 bit = 0000 0001 -> 1111 1110
         System.out.println("j = " + j + " | " + "b = " + b);
-
     }
 }
