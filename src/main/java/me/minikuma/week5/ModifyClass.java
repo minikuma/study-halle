@@ -28,7 +28,7 @@ public class ModifyClass {
             System.out.println("삼각형의 넓이는 = " + ((a * b) / 2));
         }
     }
-    /////////////////////////////////////////////////////////////
+
     static strictfp class StrictFP {
         public double add(double number1, double number2) {
             return number1 + number2;
@@ -44,7 +44,6 @@ public class ModifyClass {
         rectangle.area(2, 3);
         Triangle triangle = new Triangle();
         triangle.area(2, 3);
-        ////////////////////////////////////////
         StrictFP sfp = new StrictFP();
         System.out.println("결과는 = " + sfp.add(10e+10, 6e+08)); //1.006E11
     }

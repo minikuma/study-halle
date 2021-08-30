@@ -1,10 +1,5 @@
 package me.minikuma.week5;
 
-/**
- * Created by wminikuma@gmail.com on 2020/12/14
- * Blog : https://minikuma-laboratory.tistory.com/
- * Github : http://github.com/minikuma
- */
 public class Signature {
     static class Circle {
         // 클래스 필드
@@ -35,13 +30,16 @@ public class Signature {
 
     public static void main(String[] args) {
         // 클래스 필드 or 메서드는 인스턴스 생성 없이 사용 가능
+        System.out.println("클래스 필드 or 메서드 인스턴스 생성 없이 사용");
         double pi = Circle.PI;
         double radiusToDegrees = Circle.radiusToDegrees(5.00);
         System.out.println("pi = " + pi);
         System.out.println("radiusToDegrees = " + radiusToDegrees);
+
         // 인스턴스 필드 or 메서드는 인스턴스 생성이 필요
+        System.out.println("인스턴스 필드 or 메서드 인스턴스 생성이 필요");
         Circle circle = new Circle(10);
-        //circle.r = 10;
+        System.out.println("r = " + circle.r);
         double area = circle.area();
         System.out.println("area = " + area);
         double circumference = circle.circumference();
